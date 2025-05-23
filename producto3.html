@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Focos LED Avanzados - Luminaplus LD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Luminaplus LD</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="producto1.html" class="nav-link">Productos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-detail container">
+        <h2 class="section-title">Focos LED Avanzados</h2>
+        <div class="product-description">
+            <p>Focos LED de última generación con alta eficiencia energética y larga vida útil.</p>
+            <p>Perfectos para iluminación residencial y comercial.</p>
+            <h3>Especificaciones Técnicas Básicas:</h3>
+            <ul>
+                <li>Potencia: 10W, 15W, 20W</li>
+                <li>Temperatura de color: 2700K - 6500K</li>
+                <li>Voltaje: 110-240V</li>
+                <li>Duración: 25,000 horas</li>
+            </ul>
+        </div>
+        <div class="product-image">
+            <img src="images/focos-led-avanzados.jpg" alt="Focos LED Avanzados" onerror="this.style.display='none'" />
+        </div>
+        <a href="index.html" class="btn">Volver a Productos</a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luminaplus LD</h3>
+                    <p>Tu proveedor confiable de soluciones eléctricas</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luminaplus LD. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

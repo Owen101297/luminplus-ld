@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todos los Productos - Luminaplus LD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .product-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+        }
+        .btn-secondary {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: var(--transition);
+        }
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Luminaplus LD</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">Todos los Productos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/focos-led.jpg" alt="Focos LED" onerror="this.style.display='none'" />
+                </div>
+                <h3>Focos LED</h3>
+                <p>Alta eficiencia y larga duración. Ahorro garantizado en tu consumo eléctrico. Disponibles en varias potencias y colores de luz.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/interruptores.jpg" alt="Interruptores" onerror="this.style.display='none'" />
+                </div>
+                <h3>Interruptores</h3>
+                <p>Diseño moderno y funcional. Control preciso de tu iluminación. Variedad de modelos para diferentes aplicaciones.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/reguladores-voltaje.jpg" alt="Reguladores de Voltaje" onerror="this.style.display='none'" />
+                </div>
+                <h3>Reguladores de Voltaje</h3>
+                <p>Protección confiable para tus dispositivos eléctricos. Estabiliza la corriente y previene daños por fluctuaciones.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/focos-led-avanzados.jpg" alt="Focos LED Avanzados" onerror="this.style.display='none'" />
+                </div>
+                <h3>Focos LED Avanzados</h3>
+                <p>Focos LED de última generación con alta eficiencia energética y larga vida útil.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/reguladores-voltaje-digitales.jpg" alt="Reguladores de Voltaje Digitales" onerror="this.style.display='none'" />
+                </div>
+                <h3>Reguladores de Voltaje Digitales</h3>
+                <p>Reguladores de voltaje con pantalla digital para monitoreo en tiempo real.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/interruptores-inteligentes.jpg" alt="Interruptores Inteligentes" onerror="this.style.display='none'" />
+                </div>
+                <h3>Interruptores Inteligentes</h3>
+                <p>Interruptores con conectividad Wi-Fi para control remoto desde tu smartphone.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/reguladores-analogicos.jpg" alt="Reguladores Analógicos" onerror="this.style.display='none'" />
+                </div>
+                <h3>Reguladores Analógicos</h3>
+                <p>Reguladores de voltaje analógicos con diseño robusto y fácil manejo.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luminaplus LD</h3>
+                    <p>Tu proveedor confiable de soluciones eléctricas</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luminaplus LD. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

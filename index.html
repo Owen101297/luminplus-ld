@@ -3,82 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luminaplus LD - Tu proveedor de soluciones eléctricas de alta calidad">
+    <meta name="keywords" content="iluminación, productos eléctricos, LED, interruptores, reguladores">
     <title>Luminaplus LD</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Luminaplus LD</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <h1>Luminaplus LD</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-<section class="hero">
-    <h2>Bienvenido a Luminaplus LD</h2>
-    <p>Tu proveedor de soluciones eléctricas de alta calidad.</p>
-    <a href="productos.html" class="btn">Ver Productos</a>
-</section>
 
     <section id="home" class="hero">
-        <div class="container">
-            <h2>Ilumina tu vida con calidad</h2>
-            <p>Especialistas en productos eléctricos de alta calidad.</p>
-            <a href="productos.html" class="btn">Ver Productos</a>
+        <div class="video-wrapper">
+            <video id="background-video" autoplay loop muted playsinline>
+                <source src="your-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content container">
+            <h2 class="animate-on-scroll">Ilumina tu vida con calidad</h2>
+            <p class="animate-on-scroll">Especialistas en productos eléctricos de alta calidad</p>
+            <a href="productos.html" class="btn animate-on-scroll">Descubre Nuestros Productos</a>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>Luminaplus LD se dedica a ofrecer los mejores productos eléctricos para iluminar y mejorar tus espacios. Con años de experiencia en el sector, garantizamos calidad y excelente servicio.</p>
+            <h2 class="section-title animate-on-scroll">Sobre Nosotros</h2>
+            <div class="about-grid">
+                <div class="about-content animate-on-scroll">
+                    <p>Luminaplus LD se dedica a ofrecer los mejores productos eléctricos para iluminar y mejorar tus espacios. Con años de experiencia en el sector, garantizamos calidad y excelente servicio.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card animate-on-scroll">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Calidad Garantizada</h3>
+                        <p>Productos certificados de alta durabilidad</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <i class="fas fa-truck"></i>
+                        <h3>Envío Rápido</h3>
+                        <p>Entrega eficiente a todo el país</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <i class="fas fa-headset"></i>
+                        <h3>Soporte 24/7</h3>
+                        <p>Atención al cliente permanente</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="products" class="products">
+
+    <section class="testimonials">
         <div class="container">
-            <h2>Nuestros Productos</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <h3>Focos LED</h3>
-                    <p>Alta eficiencia y larga duración.</p>
+            <h2 class="section-title animate-on-scroll">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Excelente calidad en sus productos LED. Han mejorado significativamente la iluminación de mi negocio."</p>
+                    <div class="testimonial-author">
+                        <h4>Carlos Rodríguez</h4>
+                        <p>Propietario de Restaurant</p>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <h3>Interruptores</h3>
-                    <p>Diseño moderno y funcional.</p>
+                <div class="testimonial-card animate-on-scroll">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Servicio profesional y productos de primera calidad. Totalmente recomendado."</p>
+                    <div class="testimonial-author">
+                        <h4>María González</h4>
+                        <p>Arquitecta</p>
+                    </div>
                 </div>
-                <div class="product-item">
-                    <h3>Reguladores de Voltaje</h3>
-                    <p>Protege tus dispositivos.</p>
-                </div>
-                <!-- Agrega más productos según sea necesario -->
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
-            <p>Para consultas y más información, no dudes en ponerte en contacto con nosotros.</p>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Correo Electrónico" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
+            <h2 class="section-title animate-on-scroll">Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Ubicación</h3>
+                        <p>Calle Principal #123, Ciudad</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>info@luminaplusld.com</p>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Luminaplus LD. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luminaplus LD</h3>
+                    <p>Tu proveedor confiable de soluciones eléctricas</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luminaplus LD. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="scripts/product-interactions.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>
